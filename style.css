@@ -1,0 +1,222 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+
+}
+
+header {
+  background-color: burlywood;
+  color: #ffffff;
+  width: auto;
+  text-shadow: #8b5504 1px 1px 5px;
+  padding: 20px;
+}
+
+h1,
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.produtos .lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #ffffff;
+}
+
+.produtos {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.produtos a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.lista {
+  background-color: burlywood;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px solid #ffffff;
+  align-items: center;
+}
+
+.lista a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.container {
+  display: flex;
+  height: 70vh;
+}
+
+.container h2 {
+  padding: 10px;
+  background-color: rgb(190, 150, 97);
+}
+
+aside {
+  flex: 0 0 250px;
+  background-color: rgb(190, 150, 97);
+}
+
+main {
+  width: 100%;
+  color: #444444;
+}
+
+.mainPaginas h2 {
+  color: #ffffff;
+}
+
+.mainPaginas a {
+  text-decoration: none;
+}
+
+.mainPaginas p {
+  margin-left: 5%;
+}
+
+.imagemFundo {
+  background-image: linear-gradient(
+      to right,
+      rgb(255, 255, 255) 0%,
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0) 40%,
+      rgb(255, 255, 255) 100%
+    ),
+    url(https://c7.alamy.com/comp/2YKWW35/art-craft-artist-work-with-ceramic-at-clay-pottery-workshop-studio-small-business-handmade-creativity-concept-black-and-white-editing-2YKWW35.jpg);
+  background-size: 100% 112%;
+
+  background-repeat: no-repeat;
+}
+
+.conteudoPaginas {
+  display: flex;
+  padding: 5%;
+  align-items: center;
+
+  border: #ffffff solid 1px;
+  width: auto;
+}
+
+.imagemPaginas {
+  border-radius: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid rgb(190, 150, 97);
+}
+
+table {
+  margin-left: 5%;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: center;
+}
+
+.voltar {
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.mainClass {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+  margin: 20px 20px;
+}
+
+.bemVindo {
+  flex-grow: 1;
+  align-content: center;
+  /* text-shadow: #000000 1px 1px 10px; */
+}
+
+.bemVindoSub {
+  flex-grow: 4;
+  /* text-shadow: #000000 1px 1px 5px; */
+}
+
+footer {
+  background-color: burlywood;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  padding: 10px;
+  bottom: 0;
+  width: 100vw;
+}
+
+.inscricao {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+}
+
+.inscrevaSe {
+  margin: 20px;
+}
+
+.copyright {
+  margin-left: 5%;
+  padding: 20px;
+}
+
+#inputNome {
+  margin-left: 5px;
+}
+
+.cadastrar {
+  margin-left: 30%;
+}
+
+@media screen and (max-width: 768px) {
+  /* aside {
+        max-width: 40%;
+    } */
+
+  .container {
+    height: 70vh;
+  }
+
+  footer,
+  .inscricao,
+  .copyright {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+
+  }
+
+  .imagemFundo {
+    background-image: none;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .conteudoPaginas {
+    flex-direction: column;
+  }
+}
